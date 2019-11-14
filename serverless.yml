@@ -1,6 +1,4 @@
 service: web-api
-custom:
-  secrets: ${file(secrets.json)}
 provider:
   name: aws
   runtime: nodejs8.10
