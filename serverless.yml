@@ -153,14 +153,14 @@ resources:
         BackupRetentionPeriod: 1
         DBSubnetGroupName:
           Ref: DatabaseSubnetGroup
-        Engine: aurora-postgresql
+        Engine: aurora
         EngineMode: serverless
         MasterUsername: root
         MasterUserPassword: password
         ScalingConfiguration:
           AutoPause: false
           MinCapacity: 2
-          MaxCapacity: 192
+          MaxCapacity: 128
         StorageEncrypted: true
         VpcSecurityGroupIds:
           - Ref: DatabaseSecurityGroup
